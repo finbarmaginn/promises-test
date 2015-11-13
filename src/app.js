@@ -36,10 +36,10 @@ function get(url) {
 get("ajax/ajax.xml").then(function(xml){
     var demo = document.getElementById("demo");
 
-    var xmlTo = xml.getElementsByTagName("to")[0].childNodes[0].nodeValue,
-        xmlFrom = xml.getElementsByTagName("from")[0].childNodes[0].nodeValue,
-        xmlHeading = xml.getElementsByTagName("heading")[0].childNodes[0].nodeValue,
-        xmlBody = xml.getElementsByTagName("body")[0].childNodes[0].nodeValue;
+    var xmlTo = "To: " + xml.getElementsByTagName("to")[0].childNodes[0].nodeValue,
+        xmlFrom = "From: " + xml.getElementsByTagName("from")[0].childNodes[0].nodeValue,
+        xmlHeading = "Heading: " + xml.getElementsByTagName("heading")[0].childNodes[0].nodeValue,
+        xmlBody = "Body: " + xml.getElementsByTagName("body")[0].childNodes[0].nodeValue;
 
     var xmlArray = [xmlTo, xmlFrom, xmlHeading, xmlBody];
 
