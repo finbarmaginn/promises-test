@@ -29,8 +29,5 @@ module.exports = {
                 loader: "style!css!autoprefixer!less"
             },
         ]
-    },
-    devServer: {
-        contentBase: "./src"
     }
 };

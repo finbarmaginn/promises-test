@@ -1,6 +1,8 @@
 /**
  * Created by finba on 13/11/2015.
  */
+require("babel-polyfill");
+
 function get(url) {
     // Return a new promise.
     return new Promise(function(resolve, reject) {
